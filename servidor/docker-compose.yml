@@ -1,0 +1,15 @@
+# n8n (el reloj y los cables) + WAHA (WhatsApp) en tu VPS.
+# Uso: docker compose up -d
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n
+    restart: unless-stopped
+    ports: ["5678:5678"]
+    volumes: [n8n_data:/home/node/.n8n]
+  waha:
+    image: devlikeapro/waha
+    restart: unless-stopped
+    ports: ["3000:3000"]
+    volumes: ["./sesiones:/app/.sessions"]
+volumes:
+  n8n_data:
