@@ -21,6 +21,8 @@ ordenarlo en un tablero, recordar lo que vence y armar el reporte de la semana. 
 3. Abre Claude Code y escribe: *«Lee CLAUDE.md y procesa la bandeja»*.
 4. Revisa los cambios que propone en `tablero.md` y acéptalos.
 
+Compara con [`proyecto-ejemplo/resultado-esperado/tablero.md`](proyecto-ejemplo/resultado-esperado/tablero.md).
+
 Luego cambia `CLAUDE.md` por los datos de tu proyecto y usa los prompts de [`prompts.md`](prompts.md).
 
 ## La carpeta del proyecto
